@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/inquiry.css">
+        <title>株式会社 金MS</title>
+    </head>
+
+    <body>
+        
+    <header>
+        <h1 id="top">株式会社 金MS</h1>
+
+        <nav id="menu">
+            <ol>
+                <li><a href="./(1)Main.html" target="_self">ホーム</a></li>
+                <li><a href="./(5)inquiry.html" target="_self">お問い合わせ</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div>
+        <h2 id="inquiry">お問い合わせ</h2>
+        <details>
+            <summary>Contact</summary>
+        <p>
+        <div class="contact"></div>
+
+        <h1 class="contact-ttl">Contact</h1>
+
+        <form action="">
+            <table class="contact-table"></table>
+        </form>
+        
+        <tr>
+            <th class="contact-item"></th>
+            <td class="contact-body"></td>
+        </tr>
+
+        <tr>
+            <th class="contact-item">名前：</th>
+            <td class="contact-body">
+              <input type="text" name="名前" class="form-text" />
+            </td>
+        </tr>
+        <br>
+        
+        <tr>
+            <th class="contact-item">性別：</th>
+            <td class="contact-body">
+              <label class="contact-sex">
+                <input type="radio" name="性別" />
+                <span class="contact-sex-txt">男</span>
+              </label>
+              <label class="contact-sex">
+                <input type="radio" name="性別" />
+                <span class="contact-sex-txt">女</span>
+              </label>
+            </td>
+        </tr>
+        <br>
+
+        <tr>
+            <th class="contact-item">メール：</th>
+            <td class="contact-body">
+              <input type="email" name="メール" class="form-text" />
+            </td>
+        </tr>
+        <br>
+        
+        <tr>
+            <th class="contact-item">電話：</th>
+            <td class="contact-body">
+              <input type="tel" name="電話" class="form-text" />
+            </td>
+        </tr>
+        <br>
+        
+        <tr>
+            <th class="contact-item">カテゴリー：</th>
+            <td class="contact-body">
+              <select name="問い合わせ内容" class="form-select">
+                <option>選択</option>
+                <option>企業関連</option>
+                <option>商品関連</option>
+                <option>求職関連</option>
+                <option>その他</option>
+              </select>
+            </td>
+        </tr>
+        <br>
+        
+        <tr>
+            <th class="contact-item">お問い合わせ内容</th>
+            <td class="contact-body">
+              <textarea name="問い合わせ" class="form-textarea"></textarea>
+            </td>
+        </tr>    
+
+        <input class="contact-submit" type="submit" value="送信" />
+        </p>
+    </body>
+</html>

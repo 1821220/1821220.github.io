@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="./css/base.css">
+    <meta name="author" content="MinsooKim"/>
+    <meta name="keyword" content="html, css, javascript"/>
+    <title>株式会社 金MS</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function slideSwitch() {
+           var $active = $('#slideshow img.active');
+        
+           if ( $active.length == 0 ) $active = $('#slideshow img:last');
+        
+           var $next =  $active.next().length ? $active.next()
+              : $('#slideshow img:first');
+        
+           $active.addClass('last-active');
+        
+           $next.css({opacity: 0.0})
+              .addClass('active')
+              .animate({opacity: 1.0}, 1000, function() {
+                   $active.removeClass('active last-active');
+              });
+        }
+        
+        $(function() {
+           setInterval( "slideSwitch()", 3000 );
+        });
+        </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="top">株式会社 金MS</h1>
+
+        <nav id="menu">
+            <ol>
+                <li><a href="./(1)Main.html" target="_self">ホーム</a></li>
+                <li><a href="./(2)company.html" target="_blank">会社情報</a></li>
+                <li><a href="./(3)goods.html" target="_blank">商品情報</a></li>
+                <li><a href="./(4)privacy.html" target="_blank">プライバシーポリシー</a></li>
+                <li><a href="./(5)inquiry.html" target="_blank">お問い合わせ</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <p id="slideshow">
+        <img src="img/bulgogi.png" alt="画像1" class="active">
+        <img src="img/makkuksu.png" alt="画像2">
+        <img src="img/salad.png" alt="画像3">
+        <img src="img/snackbar.png" alt="画像4">
+        <img src="img/yasaimaki.png" alt="画像5">
+        <img src="img/tamago.png" alt="画像6">        
+     </p>
+
+    <div>
+        <a href="#top">トップに戻る</a>
+    </div>
+    
+    <footer>
+        Copyright &copy; MinsooKim, All Rights Reserverd.
+    </footer>
+
+</body>
+
+</html>
